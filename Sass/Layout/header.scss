@@ -1,0 +1,63 @@
+// Header
+.headerMobile {
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $color-cuaternario;
+  margin-bottom: 50px;
+}
+.logo img {
+  display: none;
+}
+.logoM {
+  width: 70px;
+  height: 60px;
+  margin: 10px 0px 10px 40px;
+}
+.menuMobile {
+  display: none;
+}
+.menuH {
+  width: 35px;
+  height: 35px;
+  margin: 20px 30px 0px 0px;
+}
+.menu {
+  display: none;
+}
+@media (min-width: 767px) {
+  .encabezado {
+    display: flex;
+    gap: 50px;
+    padding: 30px 80px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: transparent;
+    margin-bottom: 50px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-top: 15px;
+  }
+
+  .logo {
+    flex-direction: row;
+  }
+  .logo img {
+    display: block;
+    width: 200px;
+    height: 50px;
+  }
+
+  .headerMobile {
+    display: none;
+  }
+}

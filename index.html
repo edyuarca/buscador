@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="logo">
+        <img src="assets/logo.gif" alt="logo diablo" />
+      </div>
+      <div class="navbarContainer">
+        <div class="menu">
+          <li><a href="#"></a>Inicio</li>
+          <li><a href="#"></a>Agregar personaje</li>
+        </div>
+      </div>
+    </header>
+    <header class="headerMobile">
+      <img src="assets/logoMobile.png" alt="logo" class="logoM" />
+      <img src="assets/menu.png" alt="" class="menuH" />
+      <div class="menuMobile">
+        <li><a href="#"></a>Inicio</li>
+        <li><a href="#"></a>Agregar personaje</li>
+      </div>
+    </header>
+
+    <main>
+      <section class="seccionFiltros">
+        <!--Seccion buscador-->
+        <div class="lupa">
+          <input
+            type="text"
+            name="buscador"
+            id="buscador"
+            placeholder="Busca conocimiento"
+          />
+          <button>Buscar</button>
+        </div>
+        <div class="filtros">
+          <form action="">
+            <select name="reino" id="reino">
+              <option value="altosCielos">Altos Cielos</option>
+              <option value="santurario">Santuario</option>
+              <option value="infiernosArdientes">Infiernos Ardientes</option>
+              <option value="pandemonio">Pandemonio</option>
+            </select>
+
+            <select name="afiliacion" id="afiliacion">
+              <option value="consejoAngiris">Consejo de Angiris</option>
+              <option value="horadrim">Horadrim</option>
+              <option value="senoresTerror">Se;ores del terror</option>
+              <option value="independiente">independiente</option>
+            </select>
+
+            <select name="alineamiento" id="alineamiento">
+              <option value="legalBueno">Legal bueno</option>
+              <option value="legalNeutral">Legal neutral</option>
+              <option value="legalMaligno">Legal Maligno</option>
+              <option value="neutralBueno">Neutral bueno</option>
+              <option value="neutral">Neutral</option>
+              <option value="neutralMaligno">Neutral maligno</option>
+              <option value="caoticoBueno">Caótico bueno</option>
+              <option value="caoticoNeutral">Caótico neutral</option>
+              <option value="caoticoMaligno">Caótico maligno</option>
+            </select>
+          </form>
+        </div>
+        <div class="saludo">
+          <h1>BIENVENIDO, ERRANTE</h1>
+          <p>Acaso buscas conocimiento?</p>
+          <p>Entonces espera un poco y escucha...</p>
+        </div>
+      </section>
+
+      <section class="seccionResultados">
+        <!--seccion resultados-->
+        <div class="vistaPreviaContenedor">
+          <div class="vistaPrevia">
+            <img src="assets/cainEjemplo.png" alt="imagen miniatura" />
+            <div>
+              <h3>${NOMBRE}</h3>
+              <button class="" data-cardId="${id}">Ver detalle</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="detallesContenedor">
+        <div class="cardDetallada">
+          <img src="assets/Caincompleto.jpeg" alt="imagen completa" />
+          <div class="datosYBtns">
+            <div class="datosPj">
+              <h3>${NOMBRE}</h3>
+              <div>
+                <h4>Reino</h4>
+                <p>${reino}</p>
+              </div>
+              <div>
+                <h4>Afiliacion</h4>
+                <p>${afiliacion}</p>
+              </div>
+              <div>
+                <h4>Alineamiento</h4>
+                <p>${alineamiento}</p>
+              </div>
+              <div>
+                <h4>Descripción</h4>
+                <p>${descripción}</p>
+              </div>
+            </div>
+            <div class="btnCard">
+              <button>Editar</button>
+              <button>Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Seccion Editar Pj-->
+      <section class="editarCard">
+        <form action="">
+          <h3>${Nombre}</h3>
+          <div>
+            <label for="">Reino</label>
+            <select name="reino" id="reino">
+              <option value="altosCielos">Altos Cielos</option>
+              <option value="santurario">Santuario</option>
+              <option value="infiernosArdientes">Infiernos Ardientes</option>
+              <option value="pandemonio">Pandemonio</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Afiliación</label>
+            <select name="afiliacion" id="afiliacion">
+              <option value="consejoAngiris">Consejo de Angiris</option>
+              <option value="horadrim">Horadrim</option>
+              <option value="senoresTerror">Se;ores del terror</option>
+              <option value="independiente">independiente</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Alineamiento</label>
+            <select name="alineamiento" id="alineamiento">
+              <option value="legalBueno">Legal bueno</option>
+              <option value="legalNeutral">Legal neutral</option>
+              <option value="legalMaligno">Legal Maligno</option>
+              <option value="neutralBueno">Neutral bueno</option>
+              <option value="neutral">Neutral</option>
+              <option value="neutralMaligno">Neutral maligno</option>
+              <option value="caoticoBueno">Caótico bueno</option>
+              <option value="caoticoNeutral">Caótico neutral</option>
+              <option value="caoticoMaligno">Caótico maligno</option>
+            </select>
+          </div>
+          <div class="ediarDescripcion">
+            <label for="">Descripción</label>
+            <textarea name="" id="" cols="" rows="10"></textarea>
+          </div>
+          <div class="btnCard">
+            <button>Aceptar</button>
+            <button>Cancelar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Hecho por Yuli</p>
+      <p>Buenos Aires 2024</p>
+    </footer>
+  </body>
+</html>

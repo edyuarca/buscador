@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Signika+Negative:wght@300..700&display=swap");
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: $color-primario;
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 3px #fff;
+}
+
+body {
+  background-image: url(../assets/fondo.mp4);
+  background-size: cover;
+  background-attachment: fixed;
+
+  h1 {
+    font-family: "Cinzel", serif;
+    color: $color-primario;
+  }
+
+  h2 {
+    font-family: "Cinzel", serif;
+    color: $color-primario;
+    text-shadow: 3px;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-family: "Signika Negative", sans-serif;
+    color: $color-primario;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-family: "Signika Negative", sans-serif;
+    color: $color-primario;
+  }
+
+  p {
+    font-family: "Signika Negative", sans-serif;
+    color: $color-primario;
+    font-size: 1rem;
+  }
+}
+
+footer {
+  background-color: $color-cuaternario;
+  position: sticky;
+  top: 0;
+  p {
+    color: $color-primario;
+  }
+}
